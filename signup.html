@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lawyer Recommendation - Signup</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signup-container">
+      <div class="signup-client">
+        <h2>Client Signup</h2>
+        <form action="client-signup.php" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email address">
+          <input type="tel" name="phone" placeholder="Phone number">
+          <input type="text" name="address" placeholder="Address">
+          <input type="text" name="area_of_law" placeholder="Area of lawyer needed">
+          <input type="number" name="budget" placeholder="Budget">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password">
+          <input type="submit" value="Signup">
+        </form>
+      </div>
+      <div class="signup-lawyer">
+        <h2>Lawyer Signup</h2>
+        <form action="lawyer-signup.php" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email address">
+          <input type="tel" name="phone" placeholder="Phone number">
+          <input type="text" name="address" placeholder="Address">
+          <input type="text" name="area_of_practice" placeholder="Area of practice">
+          <input type="number" name="experience" placeholder="Experience in Year">
+          <input type="password" name="password2" id="password2" placeholder="Password">
+          <input type="password" name="confirm_password2" id="confirm_password2" placeholder="Confirm password">
+          <input type="submit" value="Signup">
+        </form>
+      </div>
+    </div>
+    <Label>Aready Have an Account?</Label><br><br>
+    <form action="login.html" method="post">
+      <input type="submit" value="login">
+    </form>
+  </div>
+
+  
+</body>
+</html>
+

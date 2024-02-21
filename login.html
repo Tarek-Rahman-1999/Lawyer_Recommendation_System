@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lawyer Recommendation - Login</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Login as a Client</h2>
+        <form action="login.php" method="post">
+          <input type="hidden" name="user_type" value="client">
+          <input type="email" name="email" placeholder="Email address">
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit" value="Login">
+        </form>
+      </div>
+  
+      <div class="col-md-6">
+        <h2>Login as a Lawyer</h2>
+        <form action="login.php" method="post">
+          <input type="hidden" name="user_type" value="lawyer">
+          <input type="email" name="email" placeholder="Email address">
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit" value="Login">
+        </form>
+        
+        <form action="admin-login.php" method="post">
+          <input type="submit" value="Admin">
+        </form>
+        
+        <p>Don't have an Account?</p>
+        <form action="signup.html" method="post">
+          <input type="submit" value="Signup">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
